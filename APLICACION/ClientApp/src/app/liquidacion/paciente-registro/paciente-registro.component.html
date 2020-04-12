@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Registro de Pacientes</h2>
+            <form >
+                <div class="form-group">
+                    <label>Identificacion</label>
+                    <input type="text" name="Identificacion" [(ngModel)]="paciente.Identificacion" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>ValorServicio</label>
+                    <input type="number" name="ValorServicio" [(ngModel)]= "paciente.ValorServicio" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Salario</label>
+                    <input type="number" name="Salario" [(ngModel)]= "paciente.Salario" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Copago</label>
+                    <input type="number" name="Copago" [(ngModel)]= "paciente.Copago" class="form-control" readonly />
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1" (click)="add()">Registrar</button>
+                    <button class="btn btn-secondary" type="reset">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
